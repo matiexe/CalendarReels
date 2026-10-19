@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum OrderStatus {
+  PENDING     // Pendiente por grabar
+  IN_PROGRESS // Grabando / Editando
+  COMPLETED   // Entregado / Listo
+}
+
+model VideoOrder {
+  id          String      @id @default(uuid())
+  title       String      // Título o concepto del video (ej. "Reel Unboxing Skincare")
+  clientName  String      // Cliente o marca
+  platform    String      @default("Reels") // Reels, TikTok, Shorts, UGC
+  description String?     // Notas del guion o requerimientos
+  scheduledAt DateTime    // Fecha agendada en el calendario
+  price       Decimal     @db.Decimal(10, 2) // Precio del video creado
+  isPaid      Boolean     @default(false)    // Estado del cobro
+  status      OrderStatus @default(PENDING)  // Estado de producción del video
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([scheduledAt])
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Reel Unboxing Kit Skincare",
+    "clientName": "Glow Beauty Co.",
+    "platform": "Reels",
+    "description": "Video de 45s mostrando textura y aplicación con luz natural.",
+    "scheduledAt": "2026-10-08T12:00:00.000Z",
+    "price": 150,
+    "isPaid": true,
+    "status": "COMPLETED",
+    "createdAt": "2026-10-19T19:50:03.460Z",
+    "updatedAt": "2026-10-19T19:50:03.460Z"
+  },
+  {
+    "id": "sample-2",
+    "title": "Pack 2 Videos UGC App Fitness",
+    "clientName": "FitPulse App",
+    "platform": "TikTok",
+    "description": "Gancho en los primeros 3 segundos entrenando en casa.",
+    "scheduledAt": "2026-10-15T12:00:00.000Z",
+    "price": 280,
+    "isPaid": false,
+    "status": "IN_PROGRESS",
+    "createdAt": "2026-10-19T19:50:03.460Z",
+    "updatedAt": "2026-10-19T19:50:03.460Z"
+  },
+  {
+    "id": "sample-3",
+    "title": "Review Cafetera Express",
+    "clientName": "Aroma Café",
+    "platform": "Reels",
+    "description": "Transiciones dinámicas preparando un latte helado.",
+    "scheduledAt": "2026-10-22T12:00:00.000Z",
+    "price": 190,
+    "isPaid": false,
+    "status": "PENDING",
+    "createdAt": "2026-10-19T19:50:03.460Z",
+    "updatedAt": "2026-10-19T19:50:03.460Z"
+  },
+  {
+    "id": "30813102-a9ae-4285-87fe-16cd193d0e1e",
+    "title": "Los de siempre promo nueva",
+    "clientName": "los de siempre",
+    "platform": "TikTok",
+    "description": null,
+    "scheduledAt": "2026-10-20T12:00:00.000Z",
+    "price": 15000,
+    "isPaid": true,
+    "status": "PENDING",
+    "createdAt": "2026-10-19T19:56:10.436Z",
+    "updatedAt": "2026-10-19T19:56:10.436Z"
+  }
+]
