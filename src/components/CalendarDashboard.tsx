@@ -386,7 +386,7 @@ export function CalendarDashboard({
                               )}
                             </div>
                             <span className="max-w-full truncate rounded bg-slate-100 px-1 py-0.2 text-[9px] font-bold text-slate-700">
-                              ${Math.round(dayTotal)}
+                              ${Math.round(dayTotal).toLocaleString("es-AR")}
                             </span>
                           </>
                         )}

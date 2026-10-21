@@ -196,7 +196,7 @@ export function OrderModal({
               <div>
                 <label className="mb-1.5 flex items-center gap-1.5 text-xs font-semibold text-slate-700">
                   <DollarSign className="h-3.5 w-3.5 text-emerald-600" />
-                  Precio ($) *
+                  Precio (ARS) *
                 </label>
                 <div className="relative">
                   <span className="pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-sm font-semibold text-slate-400">
@@ -205,10 +205,10 @@ export function OrderModal({
                   <input
                     type="number"
                     inputMode="decimal"
-                    step="0.01"
+                    step="any"
                     min="0"
                     required
-                    placeholder="0.00"
+                    placeholder="0"
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     className="w-full rounded-xl border border-slate-200 py-3 pr-3.5 pl-8 text-base font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 sm:py-2.5 sm:text-sm"
